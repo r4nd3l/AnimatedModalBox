@@ -96,7 +96,7 @@ body {
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(21,21,21,0.9); /* Black w/ opacity */
+  background-color: rgba(21,21,21,0.8); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -121,13 +121,23 @@ b{
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
+  from {
+				transform: scale(0)
+			}
+
+			to {
+				transform: scale(1)
+			}
 }
 
 @keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
+  from {
+				transform: scale(0)
+			}
+
+			to {
+				transform: scale(1)
+			}
 }
 
 /* The Close Button */
@@ -140,7 +150,7 @@ b{
 
 .close:hover,
 .close:focus {
-  color: var(--gr-);
+  color: #ccc;
   text-decoration: none;
   cursor: pointer;
 }
@@ -164,6 +174,7 @@ b{
 .modal-footer button{
   width: 90px;
   height: 30px;
+  color: #ccc;
   font-size: 15px !important;;
   border: 1px solid var(--gr-);
   border-radius: 5px;
